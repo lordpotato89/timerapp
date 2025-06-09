@@ -50,7 +50,6 @@ export const CombinedDefaultTheme: CombinedTheme = {
     inverseSurface: "rgb(50, 47, 51)",
     inverseOnSurface: "rgb(245, 239, 244)",
     inversePrimary: "rgb(220, 184, 255)",
-
     divider: divider,
     outline: "rgb(124, 117, 126)",
     outlineVariant: "rgb(204, 196, 206)",
@@ -174,146 +173,35 @@ const globalStyles = StyleSheet.create({
     fontFamily: "IBMPlexSans",
     fontSize: fontsizeStandard,
   },
-  textBig: {
-    fontFamily: "IBMPlexSans",
+
+  //CONTAINERS
+  bottomContainer: {
+    paddingVertical: 16,
+    paddingHorizontal: 16,
+  },
+  screenContainerWithBottomButton: {
+    flex: 1,
+    justifyContent: "space-between",
+  },
+  centeredContent: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  // BUTTONS
+  wideButton: {
+    width: screenWidth * 0.9,
+    height: screenHeight * 0.05,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: primary,
+    borderRadius: 8,
+    alignSelf: "center",
+  },
+  wideButtonText: {
+    color: onPrimary,
     fontSize: fontsizeBig,
-  },
-  helperText: {
-    fontFamily: "IBMPlexSans",
-    fontSize: fontsizeBigger,
-  },
-  buttonText: {
-    fontFamily: "IBMPlexSans",
-    fontSize: fontsizeBig,
-  },
-  // CONTAINERS
-  container: {
-    display: "flex",
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "flex-start",
-    zIndex: 0,
-  },
-  bikeContainer: {
-    alignItems: "center",
-    width: screenWidth * appWidth,
-    zIndex: 0,
-  },
-  modalContainer: {
-    display: "flex",
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  buttonContainer: {
-    position: "absolute",
-    paddingTop: screenHeight * 0.03,
-    bottom: screenHeight * 0.08, // For example, 10% from the
-    width: screenWidth * inputWidth, // 80% of screen width
-    alignSelf: "center",
-  },
-  buttonContainerMinHeight: {
-    position: "absolute",
-    bottom: screenHeight * 0.04, // For example, 10% from the
-    width: screenWidth * inputWidth, // 80% of screen width
-    alignSelf: "center",
-  },
-  buttonContainerFlex: {
-    width: screenWidth * inputWidth,
-    paddingTop: screenHeight * 0.03,
-    paddingBottom: screenHeight * 0.04,
-    alignSelf: "center",
-  },
-  inputContainer: {
-    width: screenWidth * appWidthAuth, // 80% of screen width
-    alignSelf: "center",
-    margin: 0,
-  },
-  registrationLinksContainer: {
-    width: screenWidth * appWidth, // 80% of screen width
-    //xpaddingBottom: screenHeight * 0.02,
-    alignSelf: "center",
-    margin: 0,
-    //paddingTop: 20,
-  },
-  registrationIconsContainer: {
-    flexDirection: "row", // Arrange children in a row
-    justifyContent: "center", // Center the children horizontally
-    alignItems: "center", // Center the children vertically
-    paddingTop: screenHeight * 0.03,
-  },
-  loadingContainer: {
-    position: "absolute",
-    left: 0,
-    right: 0,
-    top: 0,
-    bottom: 0,
-    alignItems: "center",
-    justifyContent: "center",
-    zIndex: 1000,
-  },
-  //DIVIDER
-  dividerLogin: {
-    width: screenWidth * appWidthAuth,
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    alignSelf: "center",
-    paddingVertical: screenHeight * 0.03,
-  },
-  dividerRegister: {
-    width: screenWidth * appWidthAuth,
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    alignSelf: "center",
-    paddingVertical: screenHeight * 0.03,
-  },
-  hrLine: {
-    width: screenWidth * 0.24,
-    height: 1,
-  },
-  dividerText: {
-    textAlign: "center",
-    width: screenWidth * 0.34,
-  },
-  //INPUTS
-  bikeSearchBar: {
-    width: screenWidth * appWidth,
-    height: inputHeight,
-  },
-  //LIST COMPONENT
-  bikeListComponent: {
-    flex: 1,
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    width: screenWidth * appWidth,
-    borderBottomWidth: 1,
-  },
-  //SEARCH RESULTS
-  searchList: {
-    //position: "absolute",
-    flex: 1,
-    width: screenWidth * appWidth,
-    zIndex: 1,
-  },
-  //LIST ITEMS
-  searchListItem: {
-    borderBottomWidth: 1,
-    justifyContent: "center",
-  },
-  pressureInput: {
-    textAlign: "center",
-  },
-  multilineInput: {
-    minHeight: fontsizeStandard * 3,
-    fontSize: fontsizeStandard,
-  },
-  multilineContent: {
-    fontFamily: "IBMPlexSans",
-    paddingTop: fontsizeStandard * 0.5,
-    paddingBottom: fontsizeStandard * 0.5,
+    fontFamily: "IBMPlexSansMedium",
   },
 })
 

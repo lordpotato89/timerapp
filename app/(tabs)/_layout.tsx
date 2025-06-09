@@ -14,12 +14,13 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: "Home",
+          title: "Workouts",
           tabBarIcon: ({ color }) => (
             <FontAwesome size={28} name="home" color={color} />
           ),
         }}
       />
+
       <Tabs.Screen
         name="settings"
         options={{
